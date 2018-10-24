@@ -1,0 +1,8 @@
+hash: dabfcca0bd688710fefcf41f94254f6fb43606a3fb07881900861b9d5952382e
+updated: 2018-04-22T15:04:49.6742905+08:00
+imports:
+- name: github.com/akkuman/parseConfig
+  version: 80c123578a7134974f58c94533f892f480e73f22
+- name: github.com/tarm/serial
+  version: eaafced92e9619f03c72527efeab21e326f3bc36
+testImports: []

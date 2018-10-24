@@ -1,0 +1,25 @@
+{
+    "model":0,
+    "isActive":1,
+    "interval":60000,
+    "dataType":0,
+    "floatType":1,
+    "intType":0,
+    "byteOrder":0,
+    "lowerLimit":4,
+    "upperLimit":20,
+    "linearCoefficient":1,
+    "correctedIntercept":0,
+    "pollutionType":31,
+    "serial":{
+        "com":"com2",
+        "baudRate":9600,
+        "verifyMode":2,
+        "dataBitlength":1,
+        "stopBitLength":2
+    },
+    "tcp":{
+        "ip":"127.0.0.1",
+        "port":"502"
+    }
+}

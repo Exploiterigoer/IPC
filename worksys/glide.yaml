@@ -1,0 +1,6 @@
+package: worksys
+import: 
+- package:  github.com/akkuman/parseConfig
+- package:  github.com/tarm/serial
+- package:  github.com/imroc/biu
+

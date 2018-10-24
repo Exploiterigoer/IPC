@@ -1,0 +1,25 @@
+{
+    "model":1,              // model表示数据接收模式，0代表串口通讯，1代表TCP通讯，默认1
+    "isActive":1,           // active表示主、被动接收，1代表主动模式，0代表被动模式，默认1
+    "interval":60000,       // interval表示定时间隔，其单位是毫秒，如果是主动模式，必须指定，默认60秒
+    "dataType":0,           // dataType表示接收到的数据类型，0代表电流值，1代表电压值，2代表实测值，默认0
+    "floatType":0,          // floatType表示浮点数类型，0-float32，1-float64，默认0，与isFloat=1同时存在
+    "intType":0,            // intType表示整数类型，0-int16，1-int32，2-int64，默认0，与isFloat=0同时存在
+    "byteOrder":1,          // modbus传输数据的大小端模式，1表示大端，0表示小端，默认1
+    "lowerLimit":4,         // lowerLimit表示电流值或电压值的下限，即量程下限，默认4
+    "upperLimit":20,        // upperLimit表示电流值或电压值的上限，即量程上限，默认20
+    "LinearCoefficient":1,  // LinearCoefficient表示线性系数，默认1
+    "correctedIntercept":0, // correctedIntercept表示修正截距，默认0
+    "pollutionType":31,     // pollutionType表示污染源类型，31->废气，32->废水...，默认31
+    "serial":{              // 与model=0同时存在    
+        "com":1,            // com表示通讯的串口，默认串口1
+        "baudRate":9600,    // baudRate表示通讯的波特率，默认9600
+        "verifyMode":2,     // verifyMode表示奇偶校验模式，0表示偶校验，1表示奇校验，2表示无校验，默认2
+        "dataBitlength":1,  // dataBitlength表示数据位长度，0表示7位数据位，1表示8位数据位，默认1
+        "stopBitLength":2   // stopBitLength停止位长度，1表示1位停止位，2表示2位停止位，默认2，与校验方式必须对应
+    },
+    "tcp":{                 // 与model=1同时存在
+        "ip":"127.0.0.1",
+        "port":"502"
+    }
+}
